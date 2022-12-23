@@ -1,0 +1,1 @@
+for i in range(1, 100): print(f'{(m := 100-i)} bottle{(e := ["","s"][m!=1])} of beer on the wall\n{m} bottle{e} of beer!\nTake one down, pass it around\n{m-1} bottles of beer on the wall!', end='\n\n')
