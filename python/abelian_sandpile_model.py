@@ -46,8 +46,10 @@ class AbelianModel:
         f = f.convert('RGB').resize((len(self.pile)*8,)*2, resample=Image.BOX)
         f.save(name)
 def main():
-    AbelianModel(sand_pile).make_image('before.png')
-    AbelianModel(sand_pile).collapse().make_image('after.png')
+    model = AbelianModel(sand_pile)
+    
+    model.make_image('before.png')
+    model.collapse().make_image('after.png')
 
 if __name__ == "__main__""
     main()
