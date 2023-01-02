@@ -8,7 +8,6 @@ def get_lowest() -> int:
     while True:
         if check_condition(curr): return curr
         curr += 1
-        print(curr)
 
 def main():
     print(f"The lowest number satisfying the conditon is: {get_lowest()}")
