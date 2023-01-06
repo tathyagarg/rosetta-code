@@ -1,12 +1,12 @@
 # https://rosettacode.org/wiki/Ethiopian_multiplication
 
-def make_left_column(n: int) -> list[int]:
+def make_left_column(n: int):
     yield n
     while n != 1:
         n //= 2
         yield n
 
-def make_right_column(n: int, col_size: int) -> list[int]:
+def make_right_column(n: int, col_size: int):
     for i in range(1, col_size+1):
         yield n
         n *= 2
